@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webdev</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-nav">
+          <nav class="header-nav__menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+              <li class="menu__item"><a href="#syllabus" class="menu__link">Syllabus</a></li>
+              <li class="menu__item"><a href="#Projects" class="menu__link">Projects</a></li>
+              <li class="menu__item"><a href="#FAQ" class="menu__link">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a class="logo__link" href="/" aria-label="logotype of company">
+              <img src="./assets/logo.svg" alt="logotype of company" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="main-page">
+          <div class="main-page__first">
+            <div class="main-page__content">
+              <h1 class="main-page__title">your life is webdev</h1>
+              <p class="main-page__text">
+                Whatever the approach to development may be, the final program must satisfy some
+                fundamental properties
+              </p>
+              <button class="btn">get started</button>
+            </div>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="/" class="socials__link"
+                    ><img src="./assets/socials/mail_fff.svg" alt="Email" class="socials__img"
+                  /></a>
+                </li>
+                <li class="socials__item">
+                  <a href="/" class="socials__link"
+                    ><img
+                      src="./assets/socials/facebook_fff.svg"
+                      alt="Facebook"
+                      class="socials__img"
+                  /></a>
+                </li>
+                <li class="socials__item">
+                  <a href="/" class="socials__link"
+                    ><img src="./assets/socials/insta_fff.svg" alt="Instagram" class="socials__img"
+                  /></a>
+                </li>
+                <li class="socials__item">
+                  <a href="/" class="socials__link"
+                    ><img
+                      src="./assets/socials/telegram_fff.svg"
+                      alt="Telegram"
+                      class="socials__img"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ideas">
+          <div class="ideas__content">
+            <h2 class="ideas__title">Rappresent your idea with a smart Design</h2>
+            <p class="ideas__text">
+              Tasks accompanying and related to programming include: testing, debugging, source code
+              maintenance,<strong>implementation of build systems</strong>, and management of
+              derived artifacts, such as the machine code of computer programs.
+            </p>
+            <button class="btn">get started</button>
+          </div>
+          <div class="ideas__img">
+            <img src="./assets/content-image-1.png" alt="ideas-img" />
+          </div>
+        </div>
+        <div class="community">
+          <div class="community__content">
+            <img class="community__img" src="./assets/slider/content-icon.png" alt="image" />
+            <h2 class="community__title">our community</h2>
+            <p class="community__text">
+              A hacker is any skilled computer expert that uses their technical knowledge to
+              overcome a problem, but it can also mean a security hacker in common language
+            </p>
+          </div>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img
+                  src="./assets/slider/Rectangle 2.png"
+                  alt="community-image"
+                  class="slider__img"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  src="./assets/slider/slider-item.png"
+                  alt="community-img"
+                  class="slider__img"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  src="./assets/slider/slider-item2.png"
+                  alt="community-img"
+                  class="slider__img"
+                />
+              </li>
+            </ul>
+          </div>
+          <nav class="slider-nav">
+            <img src="./assets/slider/arrow-left.png" alt="slider left" />
+            <span>1</span>
+            <span>/</span>
+            <span>5</span>
+            <img src="./assets/slider/arrow-right.png" alt="slider-right" />
+          </nav>
+        </div>
+      </main>
+      <div class="footer"></div>
+    </div>
+  </body>
 </html>
