@@ -31,7 +31,8 @@ html {
 
 body {
   margin: 0;
-  font-family: Roboto, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   height: 100%;
 }
 
@@ -104,9 +105,9 @@ select {
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -115,9 +116,9 @@ button,
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -127,9 +128,9 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
   cursor: pointer;
 }
@@ -185,8 +186,8 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -197,8 +198,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -207,7 +208,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -218,7 +219,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -558,12 +559,12 @@ strong {
   top: 74px;
 }
 
-.slider-nav>img:hover {
+.slider-nav > img:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
 
-.slider-nav>span {
+.slider-nav > span {
   width: 37px;
   height: 25px;
   font-family: Roboto;
@@ -574,4 +575,219 @@ strong {
   line-height: 1.4;
   letter-spacing: normal;
   color: #373737;
+}
+
+/* Implement */
+.implement {
+  display: flex;
+  width: 100%;
+  height: 842px;
+  background-color: #ffffff;
+}
+
+.implement__img {
+  width: 407px;
+  height: 582px;
+}
+
+.implement__content {
+  width: 407px;
+  height: 184px;
+  padding-top: 300px;
+  padding-left: 130px;
+}
+
+.implement__title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #373737;
+  text-transform: uppercase;
+}
+
+.implement__text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #4e4e4e;
+}
+
+.implement__content > .btn {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Sign Up */
+.signup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 598px;
+  background-image: url('./assets/signup.png');
+  background-repeat: no-repeat;
+}
+
+.signup__title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.signup__form {
+  width: 406px;
+  height: 46px;
+}
+
+.signup__email {
+  display: inline-block;
+  width: 340px;
+  height: 46px;
+  padding: 10px 20px;
+}
+
+.signup__email::placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #373737;
+}
+
+.signup__email::required:invalid:focus {
+  border: 3px solid tomato;
+}
+.signup__email::required:valid:focus {
+  border: 3px solid rgb(71, 255, 148);
+}
+
+.signup__btn {
+  display: inline-block;
+  width: 66px;
+  height: 46px;
+  background: #00afdb;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 0;
+
+}
+
+.signup__btn:hover {
+  background: #037f9e;
+}
+
+/* Download */
+.download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 468px;
+  background-color: #f5f6f7;
+}
+
+.download__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download__title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #373737;
+  text-transform: uppercase;
+}
+
+.download__text {
+  text-align: center;
+  width: 483px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #4e4e4e;
+}
+
+.download__links {
+  display: flex;
+  width: 406px;
+  height: 54px;
+}
+
+.download__links>.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 188px;
+  height: 54px;
+  padding: 0;
+  margin: 0 30px 0 0;
+}
+
+.btn__store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 184px;
+  background-color: #000000;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  margin-top: 60px;
+  z-index: 20;
+}
+
+.footer__nav:first-child {
+  padding-left: 160px;
+}
+
+.footer__list {
+  position: relative;
+  display: flex;
+}
+
+.footer__item {
+  padding: 0 20px;
+}
+
+.footer__item:nth-child(2)::before,
+.footer__item:nth-child(2)::after {
+  content: '|';
+  position: absolute;
+  font-size: 9px;
+  background-color: #4e4e4e;
+}
+
+.footer__link {
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.footer__link:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}
+
+.footer__content>.logo {
+  top: 60px;
+  height: 45px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #818181;
+  padding-right: 150px;
+  padding-top: 100px;
 }

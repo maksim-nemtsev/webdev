@@ -132,8 +132,82 @@
             <img src="./assets/slider/arrow-right.png" alt="slider-right" />
           </nav>
         </div>
+        <div class="implement">
+          <div class="implement__img">
+            <img src="./assets/implement.png" alt="implement image" />
+          </div>
+          <div class="implement__content">
+            <h2 class="implement__title">Implement right Code</h2>
+            <p class="implement__text">
+              These might be considered part of the <strong>programming process</strong>, but often
+              the term software development is used for this larger process with the term
+              programming, implementation
+            </p>
+            <button class="btn">learn more</button>
+          </div>
+        </div>
+        <div class="signup">
+          <form action="/" class="signup__form">
+            <h2 class="signup__title">sign up for our newsletter</h2>
+            <label for="signup__email">
+              <input
+                type="email"
+                id="signup__email"
+                name="email"
+                class="singup__email"
+                placeholder="E-mail"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                required
+              />
+            </label>
+            <button class="signup__btn" type="submit">
+              <img src="./assets/btn-submit.svg" alt="signup image" />
+            </button>
+          </form>
+        </div>
+        <div class="download">
+          <div class="download__content">
+            <h2 class="download__title">Download the App</h2>
+            <p class="download__text">
+              Machine code was the language of early programs, written in the instruction set of the
+              particular machine, often in binary notation.
+            </p>
+            <div class="download__links">
+              <button class="btn">
+                <p class="btn__text">apple store</p>
+                <div class="btn__store">
+                  <img src="./assets/icon-apple.svg" alt="apple-store" />
+                </div>
+              </button>
+              <button class="btn">
+                <p class="btn__text">play market</p>
+                <div class="btn__store">
+                  <img src="./assets/icon-android.svg" alt="play market" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
       </main>
-      <div class="footer"></div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#credits" class="footer__link">Credits</a></li>
+              <li class="footer__item"><a href="#privacy" class="footer__link">Privacy</a></li>
+              <li class="footer__item"><a href="#ourteams" class="footer__link">Our teams</a></li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a class="logo__link" href="/" aria-label="logotype">
+              <img src="./assets/logo.svg" alt="logotype" />
+            </a>
+          </div>
+          <p class="footer__copyright">by TonYem for RSS at 2020</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
