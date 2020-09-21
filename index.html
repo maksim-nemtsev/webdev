@@ -13,6 +13,7 @@
   <body>
     <!-- Wrapper -->
     <div class="wrapper">
+      <h1 class="title__hide">webdev</h1>
       <!-- Header -->
       <header class="header">
         <div class="header-nav">
@@ -37,7 +38,7 @@
         <div class="main-page">
           <div class="main-page__first">
             <div class="main-page__content">
-              <h1 class="main-page__title">your life is webdev</h1>
+              <h2 class="main-page__title">your life is webdev</h2>
               <p class="main-page__text">
                 Whatever the approach to development may be, the final program must satisfy some
                 fundamental properties
@@ -103,18 +104,19 @@
             <ul class="slider__list">
               <li class="slider__item">
                 <img
-                  src="./assets/slider/Rectangle 2.png"
-                  alt="community-image"
-                  class="slider__img"
-                />
-              </li>
-              <li class="slider__item">
-                <img
                   src="./assets/slider/slider-item.png"
                   alt="community-img"
                   class="slider__img"
                 />
               </li>
+              <li class="slider__item">
+                <img
+                  src="./assets/slider/Rectangle 2.png"
+                  alt="community-image"
+                  class="slider__img"
+                />
+              </li>
+
               <li class="slider__item">
                 <img
                   src="./assets/slider/slider-item2.png"
@@ -146,22 +148,24 @@
             <button class="btn">learn more</button>
           </div>
         </div>
+
+        <!-- Sign Up -->
         <div class="signup">
-          <form action="/" class="signup__form">
+          <form class="signup__form" action="/">
             <h2 class="signup__title">sign up for our newsletter</h2>
             <label for="signup__email">
               <input
-                type="email"
+                class="signup__email"
                 id="signup__email"
+                type="email"
                 name="email"
-                class="singup__email"
                 placeholder="E-mail"
-                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
               />
             </label>
             <button class="signup__btn" type="submit">
-              <img src="./assets/btn-submit.svg" alt="signup image" />
+              <img class="signup__img" src="./assets/check.svg" alt="Sumbit your email" />
             </button>
           </form>
         </div>
@@ -173,13 +177,13 @@
               particular machine, often in binary notation.
             </p>
             <div class="download__links">
-              <button class="btn">
+              <button class="download__btn">
                 <p class="btn__text">apple store</p>
                 <div class="btn__store">
                   <img src="./assets/icon-apple.svg" alt="apple-store" />
                 </div>
               </button>
-              <button class="btn">
+              <button class="download__btn">
                 <p class="btn__text">play market</p>
                 <div class="btn__store">
                   <img src="./assets/icon-android.svg" alt="play market" />
